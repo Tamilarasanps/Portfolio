@@ -11,28 +11,31 @@ const Footer = () => {
         </p>
 
         {/* Social links */}
-        <div className="flex space-x-6">
+        {/* === Social Links === */}
+        <div className="flex gap-6 text-2xl">
           <a
             href="https://github.com/Tamilarasanps"
             target="_blank"
-            rel="noreferrer"
-            className="text-teal-400 hover:text-white transition-colors duration-300"
+            rel="noopener noreferrer"
+            className="hover:text-teal-400"
           >
-            <FaGithub size={20} />
+            <FaGithub />
           </a>
           <a
             href="https://www.linkedin.com/in/tamilarasan-ps-4b66b72b2/"
             target="_blank"
-            rel="noreferrer"
-            className="text-teal-400 hover:text-white transition-colors duration-300"
+            rel="noopener noreferrer"
+            className="hover:text-teal-400"
           >
-            <FaLinkedin size={20} />
+            <FaLinkedin />
           </a>
           <a
             href="mailto:tamilarasan.softwarengineer@gmail.com"
-            className="text-teal-400 hover:text-white transition-colors duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-400"
           >
-            <FaEnvelope size={20} />
+            <FaEnvelope />
           </a>
         </div>
       </div>

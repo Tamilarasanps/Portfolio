@@ -8,11 +8,11 @@ const Header = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <header  className="fixed top-0 left-0 w-full z-50">
+    <header className="fixed top-0 left-0 w-full z-50">
       <nav className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-500 px-6 py-4 shadow">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold text-black tracking-wide">
+          <div className="text-2xl font-bold text-gray-900 tracking-wide">
             Tamilarasan
           </div>
 
@@ -20,7 +20,7 @@ const Header = () => {
           <ul className="hidden md:flex space-x-8">
             <li>
               <a
-                href="#HomePage"
+                href="#Home"
                 className="text-white hover:text-gray-900 font-medium transition text-lg"
               >
                 Home
@@ -28,7 +28,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#AboutAndServices"
+                href="#Aboutus"
                 className="text-white hover:text-gray-900 font-medium transition text-lg"
               >
                 About Us
@@ -36,10 +36,10 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#services"
+                href="#skills"
                 className="text-white hover:text-gray-900 font-medium transition text-lg"
               >
-                Services
+                Skills
               </a>
             </li>
             <li>

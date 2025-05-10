@@ -66,7 +66,7 @@ const ServiceCard = ({ title, icon, description }) => (
 
 const AboutAndServices = () => {
   return (
-    <section className="bg-gray-800 text-white py-16 px-6 sm:px-16">
+    <section className="bg-gray-800 text-white py-16 px-6 sm:px-16"id="Aboutus">
       {/* About Me Section */}
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="text-4xl font-bold text-teal-400 mb-4">About Me</h2>
