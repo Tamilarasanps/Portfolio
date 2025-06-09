@@ -2,79 +2,85 @@ import React from "react";
 
 const projects = [
   {
-    name: "TaskMaster Pro",
+    name: "MachineStreet",
     description:
-      "A full-featured task management app with authentication and real-time updates.",
-    techStack: ["MongoDB", "Express.js", "React", "Node.js", "Socket.io"],
-    features: [
-      "JWT Authentication",
-      "Real-time updates with WebSockets",
-      "Task status tracking",
+      "A specialized platform for onboarding industrial mechanics from various sectors, allowing users to discover and contact verified mechanics through the app and website.",
+    techStack: [
+      "React Native",
+      "Expo",
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "AsyncStorage",
     ],
-    liveDemo: "https://taskmasterpro.live",
-    github: "https://github.com/yourusername/taskmaster-pro",
+    features: [
+      "Mechanic onboarding with detailed profiles",
+      "User authentication and profile management",
+      "Search and filter mechanics by industry, location, and services",
+      "Direct contact and service request options",
+      "Admin dashboard for managing users and mechanics",
+    ],
+    liveDemo: "https://machinestreets.com",
   },
   {
-    name: "DevConnect",
+    name: "Shiv Sakthi Travels",
     description:
-      "A social network for developers to share projects and connect.",
-    techStack: ["React", "Node.js", "Express", "MongoDB"],
-    features: [
-      "OAuth login with GitHub",
-      "Developer profiles & project posts",
-      "Likes and comments system",
+      "A travel service platform offering customized car rental solutions for local and outstation trips, providing easy booking through a user-friendly web interface.",
+    techStack: [
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "EmailJS",
     ],
-    liveDemo: "https://devconnect.live",
-    github: "https://github.com/yourusername/devconnect",
+    features: [
+      "Service listings for local and outstation travel",
+      "User-friendly booking form with validation",
+      "Admin access to manage inquiries",
+      "Responsive design for mobile and desktop",
+      "Email notifications on booking inquiries",
+    ],
+    liveDemo: "https://shivsakthitravels.com/",
+    github: "https://github.com/yourusername/shivsakthitravels",
   },
   {
-    name: "ShopEase",
-    description: "An e-commerce platform with user and admin dashboards.",
-    techStack: ["React", "Redux", "Node.js", "Express", "MongoDB"],
-    features: [
-      "Product management (CRUD)",
-      "Stripe payment integration",
-      "Admin dashboard with analytics",
-    ],
-    liveDemo: "https://shopease.store",
-    github: "https://github.com/yourusername/shopease",
-  },
-  {
-    name: "FitTrack",
+    name: "FaceQR App",
     description:
-      "Fitness tracking app with custom routines and progress charts.",
-    techStack: ["React", "Chart.js", "Node.js", "MongoDB"],
-    features: [
-      "Workout logging",
-      "Progress charts with Chart.js",
-      "Mobile-first responsive design",
+      "A web-based QR code scanner that integrates facial recognition to verify users before allowing QR-based access or actions. Ideal for attendance and secure check-ins.",
+    techStack: [
+      "React.js",
+      "Face API.js",
+      "Netlify",
+      "Tailwind CSS",
+      "HTML5 Webcam API",
     ],
-    liveDemo: "https://fittrackapp.com",
-    github: "https://github.com/yourusername/fittrack",
+    features: [
+      "Real-time face detection using webcam",
+      "QR code scanning with face match verification",
+      "Lightweight and responsive UI",
+      "Deployed with Netlify for fast access",
+      "No installation required — runs entirely in browser",
+    ],
+    liveDemo: "https://faceqrapp.netlify.app/",
+    github: "https://github.com/yourusername/faceqrapp",
   },
   {
-    name: "EduQuest",
-    description: "Online course platform with video lectures and quizzes.",
-    techStack: ["React", "Node.js", "MongoDB", "JWT"],
+    name: "MM Crane Service",
+    description:
+      "A responsive website for MM Crane, showcasing crane rental services, contact information, and service highlights for industrial and construction needs.",
+    techStack: ["React.js", "Netlify", "Tailwind CSS", "EmailJS"],
     features: [
-      "Secure login for instructors & students",
-      "Course enrollment & tracking",
-      "Interactive quizzes and results",
+      "Service showcase with crane types and uses",
+      "Responsive design for mobile and desktop",
+      "Contact form with EmailJS integration",
+      "Location and inquiry details",
+      "Deployed using Netlify for fast and reliable access",
     ],
-    liveDemo: "https://eduquest.io",
-    github: "https://github.com/yourusername/eduquest",
-  },
-  {
-    name: "NoteNest",
-    description: "A real-time collaborative note-taking app.",
-    techStack: ["React", "Node.js", "Socket.io", "MongoDB"],
-    features: [
-      "Live note syncing",
-      "Markdown editor support",
-      "Room-based collaboration",
-    ],
-    liveDemo: "https://notenest.live",
-    github: "https://github.com/yourusername/notenest",
+    liveDemo: "https://mm-crane.netlify.app/",
+    github: "https://github.com/yourusername/mm-crane",
   },
 ];
 
@@ -100,14 +106,14 @@ const ProjectCard = ({ project }) => (
       >
         🔗 Live Demo
       </a>
-      <a
+      {/* <a
         href={project.github}
         target="_blank"
         rel="noreferrer"
         className="text-teal-400 hover:underline"
       >
         📂 GitHub
-      </a>
+      </a> */}
     </div>
   </div>
 );
